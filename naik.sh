@@ -1,4 +1,4 @@
-pipeline{
+pipeline
 agent any
 stage
 {
@@ -18,7 +18,6 @@ stage ('Compile')
 {
 echo "compiling the project ............"
 bat "mvn compile"
-}
 }
 stage ('deploy')
 {
