@@ -23,7 +23,7 @@ bat "mvn compile"
 stage ('deploy')
 {
 steps{
-echo "deployibg the project ............"
+echo "deploying the project ............"
 }
 }
 }
