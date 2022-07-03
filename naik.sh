@@ -1,4 +1,4 @@
-pipeline{
+pipeline
 agent any
 stage
 {
@@ -21,6 +21,5 @@ stage ('deploy')
 {
 steps{
 echo "deploying the project ............"
-}
 }
 }
