@@ -2,19 +2,19 @@ pipeline{
 agent any
 stage
 {
-stage ('build')
+stage ('Build')
 {
-echo "building the code ............"
+echo "Building the code ............"
 bat "mvn clean"
 }
 }
-stage ('test')
+stage ('Test')
 {
-echo "test the code ............"
+echo "Test the code ............"
 bat "mvn test"
 }
 }
-stage ('compile')
+stage ('Compile')
 {
 echo "compiling the project ............"
 bat "mvn compile"
