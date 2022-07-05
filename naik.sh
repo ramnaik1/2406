@@ -5,19 +5,19 @@ stage
 stage ('Build')
 {
 echo "Building the code ............"
-bat "mvn clean"
+sh "mvn clean"
 }
 }
 stage ('Test')
 {
 echo "Test the code ............"
-bat "mvn test"
+sh"mvn test"
 }
 }
 stage ('Compile')
 {
 echo "compiling the project ............"
-bat "mvn compile"
+sh "mvn compile"
 }
 }
 stage ('deploy')
